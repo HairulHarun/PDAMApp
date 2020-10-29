@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        app:cardCornerRadius="5dp"
+        app:cardElevation="5dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imgCardHome"
+                android:layout_width="150dp"
+                android:layout_height="140dp"
+                android:background="@mipmap/ic_launcher" />
+
+            <TextView
+                android:id="@+id/txtCardHome"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimary"
+                android:gravity="center"
+                android:paddingLeft="5dp"
+                android:paddingTop="10dp"
+                android:paddingRight="5dp"
+                android:paddingBottom="10dp"
+                android:text="Service"
+                android:textColor="@color/colorWhite"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

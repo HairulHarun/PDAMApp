@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimaryDark"
+            android:padding="15dp"
+            android:text="Input Pengaduan"
+            android:textColor="@color/colorWhite"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorSoftGrey"
+            android:orientation="vertical"
+            android:padding="15dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:text="No Sambungan :"
+                android:textColor="@color/colorPrimary"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtDialogPengaduanNo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="@color/colorWhite"
+                android:padding="10dp"
+                android:text="TextView" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:text="Nama Pelanggan :"
+                android:textColor="@color/colorPrimary"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtDialogPengaduanPelanggan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="@color/colorWhite"
+                android:padding="10dp"
+                android:text="TextView" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:text="Alamat :"
+                android:textColor="@color/colorPrimary"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtDialogPengaduanAlamat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="@color/colorWhite"
+                android:padding="10dp"
+                android:text="TextView" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:text="Isi Pengaduan :"
+                android:textColor="@color/colorPrimary"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/txtDialogPengaduanIsi"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:background="@color/colorWhite"
+                android:ems="10"
+                android:gravity="top"
+                android:hint="Masukan pengaduan ..."
+                android:inputType="textPersonName"
+                android:padding="10dp" />
+
+            <Button
+                android:id="@+id/btnDialogPengaduanKirim"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@color/colorPrimary"
+                android:text="KIRIM"
+                android:textColor="@color/colorWhite" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

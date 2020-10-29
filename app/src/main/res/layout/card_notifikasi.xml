@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        app:cardCornerRadius="3dp"
+        app:cardElevation="3dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp"
+            android:gravity="right">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:id="@+id/txtCardNotifikasiId"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:id="@+id/txtCardNotifikasiStatus"/>
+
+            <TextView
+                android:id="@+id/txtCardNotifikasiTanggal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="5dp"
+                android:text="085341397900"
+                android:textSize="10sp"
+                android:textStyle="italic"
+                android:textColor="@color/colorPrimary"/>
+
+            <TextView
+                android:id="@+id/txtCardNotifikasiIsi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="5dp"
+                android:text="sdlknsdks sdlknsdk sdlknsdks sdlknsdk sdlknsdks sdlknsdk sdlknsdks sdlknsdk sdlknsdks sdlknsdk"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

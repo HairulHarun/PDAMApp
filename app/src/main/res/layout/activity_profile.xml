@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfileActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg">
+
+        <Button
+            android:id="@+id/btnUpload"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:background="@color/colorPrimaryDark"
+            android:text="Upload"
+            android:textColor="@color/colorWhite"
+            android:visibility="invisible" />
+
+        <RelativeLayout
+            android:id="@+id/profile_layout"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="@color/colorTransparant"
+            android:elevation="4dp"
+            android:paddingBottom="24dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/user_profile_photo"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:src="@mipmap/ic_launcher"
+                app:civ_border_color="@color/colorWhite"
+                app:civ_border_width="2dp" />
+
+            <ImageView
+                android:id="@+id/imgProfilePelanggan"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignEnd="@+id/user_profile_photo"
+                android:layout_alignRight="@+id/user_profile_photo"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="93dp"
+                android:layout_marginEnd="-2dp"
+                android:layout_marginRight="-2dp"
+                app:srcCompat="@drawable/ic_camera" />
+
+            <ImageView
+                android:id="@+id/btnLogout"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginRight="16dp"
+                app:srcCompat="@drawable/ic_logout" />
+
+            <TextView
+                android:id="@+id/txtProfileNama"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/user_profile_photo"
+                android:layout_centerHorizontal="true"
+                android:text="Viral Android"
+                android:textColor="@color/colorWhite"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtProfileNoSambungan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtProfileNama"
+                android:layout_centerHorizontal="true"
+                android:text="Android free tutorials and example"
+                android:textColor="@color/colorWhite"
+                android:textSize="20sp" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/profile_layout"
+            android:layout_alignParentBottom="true"
+            android:background="@color/colorWhite"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="5dp"
+                android:text="No KTP"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtProfileKtp"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:clickable="true"
+                android:elevation="4dp"
+                android:text="Android Profile UI Design" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="@color/colorPrimaryDark" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="5dp"
+                android:text="No HP"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtProfileHp"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:clickable="true"
+                android:elevation="4dp"
+                android:text="Android Profile UI Design" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="@color/colorPrimaryDark" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="5dp"
+                android:text="Jenis Kelamin"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtProfileSex"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:clickable="true"
+                android:elevation="4dp"
+                android:text="Android Profile UI Design" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="@color/colorPrimaryDark" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="5dp"
+                android:text="Alamat"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtProfileAlamat"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:clickable="true"
+                android:elevation="4dp"
+                android:text="Android Profile UI Design" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>
